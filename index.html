@@ -14,6 +14,7 @@
         <input type="date" id="date">
         <button onclick="calculateAge()">Calculate</button>
       </div>
+      <p id="result"></p>
     </div>
   </div>
   
@@ -22,6 +23,7 @@
 
     let userInput = document.getElementById("date");
     userInput.max = new Date().toISOString().split("T")[0];
+    let result = document.getElementById("result");
     
     function calculateAge(){
       let birthDate = new Date(userInput.value);
@@ -57,6 +59,8 @@
         m3 = 11;
         y3--;
       }
+      // console.log(y3, m3, d3);
+      result.innerHTML = `You are ${y3} Years, ${m3} Months and ${d3} Days Old`;
     }
 
     function getDaysInMonth(year, month){
