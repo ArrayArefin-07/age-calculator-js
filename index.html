@@ -12,12 +12,23 @@
       <h1>JavaScript <br> <span> Age Calculator</span></h1>
       <div class="input-box">
         <input type="date" id="date">
-        <button>Calculator</button>
+        <button onclick="calculateAge()">Calculate</button>
       </div>
     </div>
   </div>
   
-  <!-- last watch watch 07:00 min -->
+  
+  <script>
+
+    let userInput = document.getElementById("date");
+    userInput.max = new Date().toISOString().split("T")[0];
+    
+    function calculateAge(){
+      
+    }
+
+  </script>
+
 
 </body>
 </html>
