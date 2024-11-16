@@ -16,6 +16,7 @@
       </div>
       <p id="result"></p>
     </div>
+    
   </div>
   
   
@@ -60,7 +61,7 @@
         y3--;
       }
       // console.log(y3, m3, d3);
-      result.innerHTML = `You are ${y3} Years, ${m3} Months and ${d3} Days Old`;
+      result.innerHTML = `You are <span>${y3}</span> Years, <span>${m3}</span> Months and <span>${d3}</span> Days Old`;
     }
 
     function getDaysInMonth(year, month){
